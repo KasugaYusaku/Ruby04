@@ -1,23 +1,36 @@
-puts "初めてのRuby"
-puts "Ruby"+"始めました"
-p 3+3
-p 3-3
-p 3*3
-p 3/3
-array =[1,2,3,4] 
-num_array = array
-p num_array
-profile ={name:"春日優作", birthday:19960105, bloodtype:"O"}
-puts profile[:name]
-puts profile[:birthday]
-puts profile[:bloodtype]
-def plus_ruby(a)
-     a+"ruby"
+n=3
+if n==3
+    p "nは3です"
 end
-p plus_ruby("like")
-p plus_ruby("yhee")
-def plus_one(num)
-    num =num+1
+if n==3 || n==4
+    p "3,4のどちらかです"
 end
-p plus_one(4)
-p plus_one(10)
+if n==3
+    p "nは3です"
+else n==4
+    p "nは4です"
+end
+
+hello="こんにちは"
+for n in 1..5 do
+    p hello
+end
+
+[1,2,3,4,5].each do |n|
+    p n
+end
+
+n=4
+if n==2
+    p "2です"
+elsif n==3
+    p "3です"
+else
+    p "それ以外です"
+end
+
+
+
+
+
+
