@@ -1,36 +1,52 @@
-n=3
-if n==3
-    p "nは3です"
-end
-if n==3 || n==4
-    p "3,4のどちらかです"
-end
-if n==3
-    p "nは3です"
-else n==4
-    p "nは4です"
+class People
 end
 
-hello="こんにちは"
-for n in 1..5 do
-    p hello
+class People
+    def initialize
+        p "Peopleのインスタンスが作られました"
+    end
 end
 
-[1,2,3,4,5].each do |n|
-    p n
+people = People.new
+
+class People
+    def self.ppp
+        p "私はPeopleクラスです"
+    end
 end
 
-n=4
-if n==2
-    p "2です"
-elsif n==3
-    p "3です"
-else
-    p "それ以外です"
+People.ppp
+
+class People
+    def name=(vvv)
+        @name = vvv
+    end
+    def name
+        @name
+    end
 end
 
+P =People.new
+P.name = ("優作")
+p P.name
 
+class People
+    attr_accessor :name
+end
 
+yua =People.new
+yua.name = ("優作")
+p yua.name
 
+class ChildPeople < People
+end
+
+class ChildPeople
+    def self.chi
+        p "私は目からビームが出せます"
+    end
+end
+
+ChildPeople.chi
 
 
